@@ -2,20 +2,23 @@
 
 
 .navbar{
-    position: relative;
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 61px 61px 0 61px;
+    padding: 20px 60px;
     z-index: 2;
     margin: 0;
+    background: var(--color-bg);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .title {
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
-    color: var(--color-text);
+    color: rgba(125, 162, 208, 0);
 }
 
 .menu {
@@ -24,19 +27,46 @@
 
 .menuItems{
     display: flex;
-    gap: 47px;
+    gap: 50px;
     list-style: none;
 }
 
 .menuItems a{
-    font-size: 25px;
+    font-size: 20px;
     color: var(--color-text);
     text-decoration: none;
-
+    position: relative;
 }
+
+.menuItems a::after{
+	content: '';
+	width: 0;
+	height: 2px;
+	background-color: var(--color-text);
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	transition: 0.4s;	
+}
+.menuItems a:hover{
+	color: var(--color-secondary);
+	outline: none;
+	width: 100%;
+}
+
+.menuItems a:hover::after{
+	width: 100%;
+}
+
 .menuBtn{
     display: none;
 }
+
+.title.fixed{
+    color: var(--color-text);
+    transition: 0.3s ease-in-out;
+}
+
 
 @media screen and (max-width: 900px) {
     .navbar{
@@ -64,10 +94,10 @@
         display: none;
         flex-direction: column;
         align-items: center;
-        gap: 13px;
+        gap: 15px;
         border-radius: 10px;
-        background: rgb(25,55,109);
-        background: linear-gradient(0deg, rgba(25, 55, 109, 0.2) 0%,  rgba(25, 55, 109, 1) 100%);
+        background: rgb(118, 151, 208);
+        background: linear-gradient(0deg, rgba(125, 162, 208, 0.949) 50%,  rgba(157, 175, 209, 0.9) 100%);
         padding: 24px 33px;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
     }

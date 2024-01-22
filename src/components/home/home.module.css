@@ -54,7 +54,7 @@
     text-decoration: none;
     background-color: var(--color-primary);
     color: var(--color-text);
-    border-radius: 100px;
+    border-radius: 20px;
     font-size: 30px;
     font-weight: 600;
     padding: 17px 26px;
@@ -69,14 +69,42 @@
     animation-duration: 0.5s;
     animation-iteration-count: 1 ;
     animation-timing-function: ease-in-out;
+    -webkit-user-drag: none;
+}
+
+.stack{
+    display: flex;
+    position: relative;
+    padding: 40px 0;
+}
+
+.stack h2{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.icons img{
+    height: 50px;
+    width: 50px;
+    margin: 0 10px ;
+    border-radius: 49%;
+    justify-items:right;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 0 rgb(0, 0, 0, 1);    
+}
+.icons img:hover{
+	background: #dfe3e8;
+    box-shadow: 0px -3px 4px 0px rgb(1, 94, 192);    
+    transition: 0.2s;
 }
 
 @keyframes rightfloat {
     0% {
-        transform: translate(600px,0px);
+        transform: translate(700px,0px);
     }
     15% {
-        transform: translate(600px,0);
+        transform: translate(700px,0px);
     }
     100% {
         transform: translate(0, 0px);

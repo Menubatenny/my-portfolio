@@ -1,0 +1,42 @@
+@import "../../vars.css";
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    top: 35%;
+    left: 0px;
+    position:fixed;
+    z-index: 1;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10rem;
+    height: 3.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: linear-gradient(0deg, rgba(125, 162, 208, 0.7) 50%,  rgba(157, 175, 209, 0.7) 100%);
+    margin-left: -100px;
+    transition-duration: 0.3s;
+}
+
+.icons:hover{
+    border-radius: 6px;
+    margin-left: -10px;
+    transition-duration: 0.3s;
+}
+
+.linknames{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.rounded-bottom{
+    border-bottom-right-radius: 0.375rem;
+}

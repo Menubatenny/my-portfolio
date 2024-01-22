@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import styles from "./Navbar.module.css"
 import {getImageUrl} from "../../utils"
+import { motion, useAnimation, useInView } from "framer-motion"
 
 
 export const Navbar = () => {

@@ -83,20 +83,57 @@
     margin-top: 15px;
     margin-right: 10px;
 }
-
-.icons img{
+.wrapper{
+    display: inline-flex;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.icon img{
     height: 50px;
     width: 50px;
     margin: 0 10px ;
+    cursor: pointer;
     border-radius: 49%;
     justify-items:right;
     border-radius: 50%;
     box-shadow: 0 0 4px 0 rgb(0, 0, 0, 1);    
 }
-.icons img:hover{
+.icon img:hover{
 	background: #dfe3e8;
     box-shadow: 0px -3px 4px 0px rgb(1, 94, 192);    
     transition: 0.2s;
+}
+
+.icon .tooltip{
+    position: absolute;
+    bottom: -46px;
+    background:linear-gradient(0deg, rgba(125, 162, 208, 1) 20%,  rgba(157, 175, 209, 1) 100%);
+    font-size: 15px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);    
+    padding: 8px 10px;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: default;
+    opacity: 0;
+}
+
+.icon .tooltip::before{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background:linear-gradient(180deg, rgba(157, 175, 209, 1) 50%,  rgba(157, 175, 209, 1) 100%);
+    top: -5px;
+    left: 50%;
+    transform:translateX(-50%) rotate(45deg);
+}
+
+.icon:hover .tooltip{
+    opacity: 1;
 }
 
 @keyframes rightfloat {

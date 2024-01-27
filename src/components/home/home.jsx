@@ -16,7 +16,7 @@ export const Home = () => {
 
         <h2 className={styles.hello}> Hello, I am</h2>
         <h1 className={styles.title}>  Menuba tenny </h1>
-        <p className={styles.description}> I'm a Full-stack web developer with over 2+ years of experience using Ruby on Rails, elixir, and React. I'm also a graduated GIS Analyst. Reach out to me, If you would like to know more! </p>
+        <p className={styles.description}> I'm a Full-stack web developer with over 2+ years of experience using Ruby on Rails, elixir, and React. I'm also a graduated GIS Analyst. Reach out to me, If you would like to know more! blah blah blah blah blah blah </p>
         <a className={styles.contactbtn} href="mailto:menubatenny@gmail.com">Contact me</a>
         <div className={styles.stack}>
             <h2> Tech stack |   </h2>

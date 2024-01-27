@@ -8,8 +8,8 @@
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 12%;
+    margin-right: 8%;
     z-index: 1;
 }
 
@@ -19,6 +19,7 @@
     align-items: flex-start;
     color: var(--color-text);
     z-index: 1;
+    margin-top: 50px;
 }
 
 .hello{
@@ -52,14 +53,18 @@
 
 .contactbtn{
     text-decoration: none;
-    background-color: var(--color-primary);
+    border: solid var(--color-primary) 1px;
     color: var(--color-text);
-    border-radius: 20px;
-    font-size: 30px;
+    border-radius: 10px;
+    font-size: 25px;
     font-weight: 600;
-    padding: 17px 26px;
+    padding: 10px 20px;
     box-shadow: 0 0 4px 0 rgba(72, 72, 72, 0.5);
+    margin-bottom: 10px;
+}
 
+.contactbtn:hover{
+    background-color: rgb(105, 141, 210) ;
 }
 
 .image{
@@ -181,7 +186,7 @@
     min-width: 350px;
     min-height: 250px;
     top: 246px;
-    right: -10vw;
+    right: -5vw;
     border-radius: 764px;
     background: rgba(234, 242, 255, 0.7);
     filter: blur(100px);
@@ -191,6 +196,8 @@
 @media screen and (max-width: 900px) {
     .container{
         flex-direction: column-reverse;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .content{
         align-items: center;

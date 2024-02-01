@@ -1,0 +1,47 @@
+@import "../../vars.css";
+
+.empty{
+    width: 100vh;
+    height: 700px;
+    position: static;
+}
+
+.about{
+    box-shadow: 0 0 20px 0 rgba(72, 72, 72, 0.5);
+    background: #f0f7ff;
+    position:relative;
+    z-index: 1;
+    margin-top: 100px;
+
+}
+.container{
+    margin: 100px 12%;
+    padding: 30px;
+}
+.heading{
+    font-size: 40px;
+    font-family: var(--font-roboto);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.content{
+    font-size: 18px;
+    font-weight: 100;
+    align-items: center;
+    font-family: var(--font-roboto);
+    padding: 20px;
+}
+
+.content p{
+    text-align: justify;
+    padding: 10px 0;
+}
+.content ul {
+    padding: 10px 50px;
+    justify-content: center;
+}
+
+.content ul li{
+    padding:5px ;
+}

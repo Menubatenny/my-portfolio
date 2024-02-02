@@ -9,7 +9,7 @@ export const Navbar = () => {
     const [fix, setFix] = useState(false)
 
     function setFixed() {
-        if(window.scrollY >= 150) {
+        if(window.scrollY >= 800) {
             setFix(true)
         } else {
             setFix(false)
@@ -19,7 +19,7 @@ export const Navbar = () => {
     window.addEventListener("scroll", setFixed)
 
     return (
-    <nav className= {styles.navbar}>
+    <nav className=  {fix ? `${styles.navbar} ${styles.bg}` : styles.navbar }>
         <a className= {fix ? `${styles.title} ${styles.fixed}` : styles.title } href="/">Menuba tenny</a>
         <div className= {styles.menu}> 
             <img className={styles.menuBtn} 

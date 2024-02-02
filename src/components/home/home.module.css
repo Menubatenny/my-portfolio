@@ -69,13 +69,14 @@
 }
 
 .image{
-    width: 50%;
+    width: 55%;
     z-index: 1;
     animation-name: rightfloat;
     animation-duration: 0.5s;
     animation-iteration-count: 1 ;
     animation-timing-function: ease-in-out;
     -webkit-user-drag: none;
+    padding-top: 30px ;
 }
 
 .stack{
@@ -204,13 +205,21 @@
         align-items: center;
     }
     .title{
-        font-size: 30px;
+        font-size: 25px;
     }
     .description{
-        font-size: 25px;
+        font-size: 18px;
 
     }
     .contactbtn{
-        font-size: 25px;
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+    .icon img{
+        height: 20px;
+        width: 20px;
+    }
+    .stack h2{
+        font-size: 10px;
     }
 }

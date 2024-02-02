@@ -63,18 +63,22 @@
     display: none;
 }
 
-.title.fixed{
+.fixed{
     color: var(--color-text);
-    transition: 0.3s ease-in-out;
+    transition: 2s ease-in-out;
     cursor: pointer;
 }
-
+.bg{
+    background: #f5faff;
+    transition: 5s;
+}
 
 @media screen and (max-width: 900px) {
     .navbar{
         flex-direction: column;
         align-items: flex-start;
         margin: 0%;
+        padding: 20px ;
     }
 
     .menu{
@@ -107,6 +111,9 @@
     .menuOpen{
         display: flex;
         z-index: 1;
+    }
+    .title {
+        font-size: 20px;
     }
 
 }

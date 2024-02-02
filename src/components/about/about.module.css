@@ -1,21 +1,20 @@
 @import "../../vars.css";
 
 .empty{
-    width: 100vh;
     height: 700px;
     position: static;
 }
 
 .about{
     box-shadow: 0 0 20px 0 rgba(72, 72, 72, 0.5);
-    background: #f0f7ff;
+    background: #f5faff;
     position:relative;
     z-index: 1;
     margin-top: 100px;
 
 }
 .container{
-    margin: 100px 12%;
+    margin: 0px 12%;
     padding: 30px;
 }
 .heading{
@@ -44,4 +43,20 @@
 
 .content ul li{
     padding:5px ;
+}
+
+@media screen and (max-width: 900px) {
+.container{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+
+}
+.content{
+    align-items: center;
+    font-size: 1rem;
+}
+.heading{
+    font-size: 2rem;
+}
 }

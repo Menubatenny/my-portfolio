@@ -1,0 +1,77 @@
+@import "../../vars.css";
+
+.skillpage{
+    background: #f5faff;
+    position:relative;
+    z-index: 1;
+}
+.container{
+    margin: 0px 12%;
+    padding: 30px;
+}
+
+.heading{
+    font-size: 40px;
+    font-family: var(--font-roboto);
+    text-align: center;
+    padding: 50px;
+}
+.skills{
+    display:grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.skillcontent{
+    display: flex;
+    padding: 10px;
+    background:linear-gradient(0deg, rgba(125, 162, 208, 0.5) 20%,  rgba(157, 175, 209, 0.5) 100%);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);    
+    margin: 10px;
+    height: 70px;
+    width: 330px;
+    align-items: center;
+
+}
+.skillcontent img{
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+}
+.skillcontent p{
+    font-family: var(--font-roboto);
+    font-weight: 600;
+    margin-left: 10px;
+}
+.skillcontent:hover{
+    background:linear-gradient(0deg, rgba(125, 162, 208, 0.6) 20%,  rgba(157, 175, 209, 0.6) 100%);
+}
+
+
+@media screen and (max-width: 900px) {
+    .container{
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px;
+    
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .skills{
+        display:grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+    }
+    .skillcontent{
+        height: 40px;
+        width: 160px;    
+    }
+    .skillcontent img{
+        height: 20px;
+        width: 20px;
+        margin: 0 10px;
+    }
+    .skillcontent p{
+        font-size: 13px;
+        font-weight: 600;
+    }
+}

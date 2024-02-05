@@ -5,6 +5,8 @@ import {Sidebar} from './components/sidebar/sidebar'
 import {About} from './components/about/about'
 import {Skill} from './components/skills/skills'
 import {Experience} from './components/experience/experience'
+import {Education} from './components/education/education'
+
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
       <About />
       <Skill/>
       <Experience/>
+      <Education />
     </div>
   )
 }

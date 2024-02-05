@@ -1,0 +1,33 @@
+@import "../../vars.css";
+
+.experience{
+    background: #f5faff;
+    position:relative;
+    z-index: 1;
+}
+.container{
+    margin: 0px 12%;
+    padding: 30px;
+}
+
+.heading{
+    font-size: 40px;
+    font-family: var(--font-roboto);
+    padding: 50px 0;
+}
+.section{
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.verticalcontent div{
+    box-shadow: 0 0 20px 0 rgba(115, 115, 115, 0.5);
+}
+.verticalcontent div div{
+    box-shadow: 0 0 0px 0 rgba(255, 255, 255, 0.5);
+}

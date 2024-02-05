@@ -4,6 +4,7 @@ import {Home} from './components/home/home'
 import {Sidebar} from './components/sidebar/sidebar'
 import {About} from './components/about/about'
 import {Skill} from './components/skills/skills'
+import {Experience} from './components/experience/experience'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Sidebar/>
       <About />
       <Skill/>
+      <Experience/>
     </div>
   )
 }

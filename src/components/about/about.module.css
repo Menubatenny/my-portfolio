@@ -20,7 +20,6 @@
 .heading{
     font-size: 40px;
     font-family: var(--font-roboto);
-    text-align: center;
     margin-top: 50px;
 }
 
@@ -29,7 +28,7 @@
     font-weight: 100;
     align-items: center;
     font-family: var(--font-roboto);
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .content p{

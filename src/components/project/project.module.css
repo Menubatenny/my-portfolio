@@ -1,0 +1,96 @@
+@import "../../vars.css";
+
+.project {
+    background: #f5faff;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    margin: 0px 12%;
+    padding: 30px;
+}
+
+.heading {
+    font-size: 40px;
+    font-family: var(--font-roboto);
+    padding: 30px 0;
+}
+
+.card {
+    position: relative;
+    z-index: 2;
+    padding: 10px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image img {
+    position: absolute;
+    top: 22%;
+    box-shadow: 0 0 10px 0 rgba(25, 25, 25, 0.5);
+    border-radius: 10px;
+    z-index: 4;
+    width: 350px;
+    height: 200px;
+}
+
+.content {
+    position: relative;
+    right: -150px;
+    width: 700px;
+    z-index: 3;
+    padding: 20px 40px;
+    margin: 20px;
+    background: #ffffff;
+    padding-left: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(101, 101, 101, 0.5);
+}
+
+.content h1 {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.content p {
+    padding: 15px 10px;
+    text-align: justify;
+}
+
+.stack {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.stack div {
+    background-color: #8dbceb6e;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.links {
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px;
+
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+}
